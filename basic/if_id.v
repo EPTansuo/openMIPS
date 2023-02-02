@@ -3,6 +3,10 @@
 //作用:暂时存放取指令阶段所取到的指令,以及对应的指令地址,并在下一个时钟
 //传递到译码阶段
 
+
+
+`include "defines.v"
+
 module if_id(
 	input wire	clk,
 	input wire	rst,

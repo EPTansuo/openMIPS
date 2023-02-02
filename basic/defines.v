@@ -28,7 +28,7 @@
 
 //Aluop
 `define EXE_OR_OP	8'b00100101
-`define EXE_NOP_O	8'b00000000
+`define EXE_NOP_OP	8'b00000000
 
 //AluSel
 `define EXE_RES_LOGIC	3'b001

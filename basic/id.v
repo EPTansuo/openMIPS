@@ -2,6 +2,9 @@
 //创建时间: 2023年 02月 01日 星期三
 //作用:对指令进行译码
 
+
+`include "defines.v"
+
 module id(
 	input wire	rst,			//复位信号
 	input wire[`InstAddrBus]	pc_i,	//译码阶段的指令对应的地址
@@ -74,13 +77,12 @@ always@(*)begin
 				alusel_o <= `EXE_RES_LOGIC;	//类算类型为逻辑运算
 				reg1_read_o <= 1'b1;		//需要端口1的数据
 				reg2_read_o <= 1'b0;		//不需要端口2的数据
-				imm <= {16'h0, inst_i[15:0]}	//合并得到立即数
+				imm <= {16'h0, inst_i[15:0]};	//合并得到立即数
 				wd_o <= inst_i[20:16];		//要写入目的寄存器的地址
 				instvalid <= `InstValid;	//指令有效
 			end
 			default: begin
 			end
-		end
 		endcase
 	end
 end
@@ -95,7 +97,7 @@ always@(*)begin
 	else if(reg1_read_o == 1'b1) begin
 		reg1_o <= reg1_data_i; 	//从Regfile读端口1的数据
 	end
-	else if(reg1_data_o == 1'b0) begin
+	else if(reg1_read_o == 1'b0) begin
 		reg1_o <= imm;
 	end
 	else begin
@@ -113,7 +115,7 @@ always@(*)begin
 	else if(reg2_read_o == 1'b1) begin
 		reg2_o <= reg2_data_i; 	//从Regfile读端口2的数据
 	end
-	else if(reg2_data_o == 1'b0) begin
+	else if(reg2_read_o == 1'b0) begin
 		reg2_o <= imm;
 	end
 	else begin

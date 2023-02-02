@@ -2,6 +2,10 @@
 //创建时间: 2023年 02月 02日 星期四 
 //作用: 依据数据进行运算
 //
+
+
+`include "defines.v"
+
 module ex(
 	input wire	rst,
 
@@ -16,7 +20,7 @@ module ex(
 	//执行的结果
 	output reg[`RegAddrBus]	wd_o,
 	output reg		wreg_o,
-	output reg[`RegBus]	wdata_o,
+	output reg[`RegBus]	wdata_o
 
 );
 

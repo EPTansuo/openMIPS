@@ -2,6 +2,9 @@
 //创建时间: 2023年 02月 02日 星期四 
 //作用: 将执行阶段去得的运算结果, 在下一个时钟周期传递到访存阶段
 //
+
+`include "defines.v"
+
 module ex_mem(
 	input wire	clk,
 	input wire	rst,
@@ -14,7 +17,7 @@ module ex_mem(
 	//送到访存阶段的信息
 	output reg[`RegAddrBus]	mem_wd,
 	output reg		mem_wreg,
-	output reg[`RegBus]	mem_data
+	output reg[`RegBus]	mem_wdata
 );
 
 always@(posedge clk) begin

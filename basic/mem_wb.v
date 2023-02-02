@@ -2,6 +2,11 @@
 //创建时间: 2023年 02月 02日 星期四 
 //作用: 将访存阶段的运算结果, 在下一个时钟传递到回写阶段
 //
+
+
+`include "defines.v"
+
+
 module mem_wb(
 	input wire	clk,
 	input wire	rst,
@@ -27,7 +32,7 @@ always@(posedge clk) begin
 	else begin
 		wb_wd <= mem_wd;
 		wb_wreg <= mem_wreg;
-		wv_Wdata <= mem_wdata;
+		wb_wdata <= mem_wdata;
 	end
 end
 

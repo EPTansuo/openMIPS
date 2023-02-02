@@ -2,6 +2,10 @@
 //创建时间: 2023年 02月 02日 星期四
 //作用: 实现指令的存储与读出
 
+
+`include "defines.v"
+
+
 module inst_rom(
 	input wire			ce,	//使能信号
 	input wire[`InstAddrBus]	addr,	//要读取的指令的地址
@@ -16,7 +20,7 @@ initial $readmemh("inst_rom.data", inst_mem);
 
 
 always@(*) begin
-	if(ce == `ChipDiable) begin
+	if(ce == `ChipDisable) begin
 		inst <= `ZeroWord;
 	end
 	else begin

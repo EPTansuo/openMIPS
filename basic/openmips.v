@@ -2,6 +2,10 @@
 // 创建时间: 2023年 02月 02日 星期四
 // 作用:实现openmips顶层模块, 建立各模块间的连接
 //
+
+
+`include "defines.v"
+
 module openmips(
 	input wire	clk,
 	input wire	rst,
@@ -33,7 +37,7 @@ wire[`AluSelBus]	ex_alusel_i;
 wire[`RegBus]		ex_reg1_i;
 wire[`RegBus]		ex_reg2_i;
 wire			ex_wreg_i;
-wire[RegAddrBus]	ex_wd_i;
+wire[`RegAddrBus]	ex_wd_i;
 
 //连接EX输出与EX/MEM输入的变量
 wire[`RegAddrBus]	ex_wd_o;
@@ -48,7 +52,7 @@ wire			mem_wreg_i;
 //连接MEM输出与MEM/WB输入的变量
 wire			mem_wreg_o;
 wire[`RegAddrBus]	mem_wd_o;
-wire[`RegBus[		mem_wdata_o;
+wire[`RegBus]		mem_wdata_o;
 
 //连接MEM/WB输出与回写阶段输入的变量
 wire			wb_wreg_i;
@@ -87,8 +91,8 @@ if_id id_id0(
 // ID模块实例化
 id id0(
 	.rst(rst),
-	.pc_i(id_pc_i);
-	.inst_i(id_inst_i);
+	.pc_i(id_pc_i),
+	.inst_i(id_inst_i),
 
 	//来自regfile的输入
 	.reg1_data_i(reg1_data),
@@ -120,14 +124,14 @@ regfile regfile1(
 	.wdata(wb_wdata_i),
 
 	// ID输出到regfile
-	.re1(reg1_data),
+	.re1(reg1_read),
 	.rdata1(reg1_data),
-	.re2(reg2_data),
+	.re2(reg2_read),
 	.raddr2(reg2_addr),
 	
 	// regfile输出到ID
 	.raddr1(reg1_addr),
-	.rdata2(reg2_data),
+	.rdata2(reg2_data)
 );
 
 
