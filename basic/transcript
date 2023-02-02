@@ -1,0 +1,21 @@
+vmap work /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/work 
+# Modifying /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips_min_sopc.mpf
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips_min_sopc.mpf
+vmap work /home/han/Disk/Document/PROJECT/learn/openMIPS/basic
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/han/Disk/Document/PROJECT/learn/openMIPS/basic 
+# Modifying /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips_min_sopc.mpf
+# ** Error: (vmap-25) Invalid ModelSim library "/home/han/Disk/Document/PROJECT/learn/openMIPS/basic". No _info file found.
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vish-19) Failed to access library '/home/han/Disk/Document/PROJECT/learn/openMIPS/basic' at "/home/han/Disk/Document/PROJECT/learn/openMIPS/basic".
+# No such file or directory. (errno = ENOENT)
+vmap work /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/work 
+# Modifying /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips_min_sopc.mpf
