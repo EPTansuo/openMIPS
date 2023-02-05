@@ -1,5 +1,6 @@
 
 //创建时间: 2023年 02月 02日 星期四
+//最后编辑: 2023年 02月 05日 星期日
 //作用: 测试openmips_min_sopc
 //
 
@@ -27,10 +28,18 @@ initial begin
 	#1000 $stop;
 end
 
+reg[6:0] i;
+
+
+
+
+
 //生成仿真波形文件
+ 
+
 initial begin
 	$dumpfile("sim.vcd");
-	$dumpvars(0,openmips_min_sopc_tb);
+	$dumpvars(0,openmips_min_sopc0);
 end
 
 //实例化最小SOPC

@@ -1,5 +1,6 @@
 
 //创建时间: 2023年 02月 01日 星期三 
+//最后修改时间: 2023年 02月 05日 星期日 
 //作用:实现了32个32为通用寄存器,可以同时进行两个寄存器的读操作和一个寄存器
 //的写操作
 
@@ -48,7 +49,7 @@ always@(*) begin
 	else if(rdata1 == `RegNumLog2'h0) begin
 		rdata1 <= `ZeroWord;
 	end
-	else if((raddr1 == waddr) && (we == `WriteEnable) 
+	else if((raddr1 == waddr) && (we == `WriteEnable) // 解决相隔两条指令数据相关的问题 
 		&& (re1 == `ReadEnable)) begin
 		rdata1 <= wdata;
 	end else if(re1 == `ReadEnable) begin
@@ -66,7 +67,7 @@ always@(*) begin
 	else if(rdata2 == `RegNumLog2'h0) begin
 		rdata2 <= `ZeroWord;
 	end
-	else if((raddr2 == waddr) && (we == `WriteEnable) 
+	else if((raddr2 == waddr) && (we == `WriteEnable) // 解决相隔两条指令数据相关的问题 
 		&& (re2 == `ReadEnable)) begin
 		rdata2 <= wdata;
 	end else if(re2 == `ReadEnable) begin
