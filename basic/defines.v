@@ -1,6 +1,7 @@
 
 //创建时间: 2023年 02月 01日 星期三 
 //最后修改时间: 2023年 02月 05日 星期日
+//最后修改时间: 2023年 04月 08日 星期六
 //********************全局宏定义*********************
 
 
@@ -43,12 +44,22 @@
 `define EXE_PREF	6'b110011	//pref的指令码
 `define EXE_SPECIAL_INST 6'b000000	//SPECIAL类指令的指令码
 
+`define EXE_MOVZ	6'b001010
+`define EXE_MOVN	6'b001011
+`define EXE_MFHI	6'b010000
+`define EXE_MTHI	6'b010001
+`define	EXE_MFLO	6'b010010
+`define EXE_MTLO	6'b010011
+
+
 `define EXE_NOP		6'b000000
 
 
 
 
 //Aluop
+
+//逻辑指令
 `define EXE_OR_OP	8'b00100101
 `define EXE_AND_OP	8'b00100100
 `define EXE_OR_OP	8'b00100101
@@ -59,6 +70,8 @@
 `define EXE_XORI_OP	8'b01011011
 `define EXE_LUI_OP	8'b01011100
 
+
+//移位指令
 `define EXE_SLL_OP	8'b01111100
 `define EXE_SLLV_OP	8'b00000100
 `define EXE_SRL_OP	8'b00000010
@@ -66,11 +79,21 @@
 `define EXE_SRA_OP	8'b00000011
 `define EXE_SRAV_OP	8'b00000111
 
+//转移指令
+`define EXE_MOVZ_OP	8'b00001010
+`define EXE_MOVN_OP	8'b00001011
+`define EXE_MFHI_OP	8'b00010000
+`define EXE_MTHI_OP	8'b00010001
+`define EXE_MFLO_OP	8'b00010010
+`define EXE_MTLO_OP	8'b00010011
+
+
 `define EXE_NOP_OP	8'b00000000
 
 //AluSel
 `define EXE_RES_LOGIC	3'b001
 `define EXE_RES_SHIFT	3'b010
+`define EXE_RES_MOVE	3'b011
 `define EXE_RES_NOP	3'b000
 
 
