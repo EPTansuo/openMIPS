@@ -198,7 +198,7 @@ always@(*)begin
 								reg2_read_o <= 1'b1;
 								instvalid <= `InstValid;
 								if(reg2_o != `ZeroWord) begin
-									wreg_o <= 'WriteEnable;
+									wreg_o <= `WriteEnable;
 								end
 								else begin
 									wreg_o <= `WriteDisable;
@@ -214,7 +214,7 @@ always@(*)begin
 									wreg_o <= `WriteEnable;
 								end
 								else begin
-									wreg_o <= 'WriteDisable;
+									wreg_o <= `WriteDisable;
 								end
 							end
 

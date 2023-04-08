@@ -16,8 +16,8 @@ module hilo_reg(
 	input wire[`RegBus]	lo_i,	//写入LO寄存器的值
 
 	//读端口
-	input wire[`RegBus]	hi_o,	//HI寄存器的值
-	input wire[`RegBus]	lo_o,	//LO寄存器的值
+	output reg[`RegBus]	hi_o,	//HI寄存器的值
+	output reg[`RegBus]	lo_o	//LO寄存器的值
 );
 
 	always@(posedge clk) begin

@@ -1,4 +1,3 @@
-
 //创建时间: 2023年 02月 02日 星期四 
 //最后修改时间: 2023年 02月 05日 星期日
 //最后修改时间: 2023年 04月 08日 星期六
@@ -32,17 +31,17 @@ module ex(
 	//回写阶段的指令是否要写入HI,LO
 	input wire[`RegBus]	wb_hi_i,
 	input wire[`RegBus]	wb_lo_i,
-	input wire		wb_whilo_i
+	input wire		wb_whilo_i,
 
 	//访存阶段的指令是否要写入HI,LO
 	input wire[`RegBus]	mem_hi_i,
 	input wire[`RegBus]	mem_lo_i,
-	input wire		mem_whilo_i
+	input wire		mem_whilo_i,
 
 	//处于执行阶段的指令对HI,LO寄存器的写操作请求
 	output reg[`RegBus]	hi_o,
 	output reg[`RegBus]	lo_o,
-	output reg		whilo_o, 
+	output reg		whilo_o 
 
 );
 
@@ -56,7 +55,7 @@ reg[`RegBus] LO;//保存LO寄存器的最新值
 
 
 //*********得到最新的HI,LO寄存器的数据,此处要解决数据相关的问题***************
-always$(*) begin
+always@(*) begin
 	if(rst == `RstEnable) begin
 		{HI,LO} <= {`ZeroWord,`ZeroWord};
 	end

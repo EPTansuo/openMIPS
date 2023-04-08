@@ -241,7 +241,7 @@ mem mem0(
 	.wd_i(mem_wd_i),
 	.wreg_i(mem_wreg_i),
 	.wdata_i(mem_wdata_i),
-	.whilo_i(mem_hi_i),
+	.whilo_i(mem_whilo_i),
 	.hi_i(mem_hi_i),
 	.lo_i(mem_lo_i),
 
@@ -267,7 +267,7 @@ mem_wb mem_wb0(
 	.mem_wdata(mem_wdata_o),
 	.mem_whilo(mem_whilo_o),
 	.mem_hi(mem_hi_o),
-	.mem_lo(mem_lo_0),
+	.mem_lo(mem_lo_o),
 
 	//送到回写阶段的信息
 	.wb_wd(wb_wd_i),
@@ -287,7 +287,7 @@ hilo_reg hilo_reg0(
 	
 	//输出到EX阶段的信息
 	.hi_o(hilo_hi_o),
-	.hi_o(hilo_lo_o)
+	.lo_o(hilo_lo_o)
 
 );
 
