@@ -161,7 +161,7 @@ always@(*)begin
 								reg2_read_o <= 1'b1;
 								instvalid = `InstValid;
 							end 
-							`EXE_MFHI: begin
+							`EXE_MFHI: begin //mfhi
 								wreg_o <= `WriteEnable;
 								aluop_o <= `EXE_MFHI_OP;
 								alusel_o <= `EXE_RES_MOVE;
@@ -169,7 +169,7 @@ always@(*)begin
 								reg2_read_o <= 1'b0;
 								instvalid <= `InstValid;
 							end 
-							`EXE_MFLO: begin
+							`EXE_MFLO: begin //mflo
 								wreg_o <= `WriteEnable;
 								aluop_o <= `EXE_MFLO_OP;
 								alusel_o <= `EXE_RES_MOVE;
@@ -177,21 +177,21 @@ always@(*)begin
 								reg2_read_o <= 1'b0;
 								instvalid <= `InstValid;
 							end 
-							`EXE_MTHI: begin
+							`EXE_MTHI: begin //mthi
 								wreg_o <= `WriteDisable;
 								aluop_o <= `EXE_MTHI_OP;
 								reg1_read_o <= 1'b1;
 								reg2_read_o <= 1'b0;
 								instvalid <= `InstValid;
 							end 
-							`EXE_MTLO: begin
+							`EXE_MTLO: begin //mtlo
 								wreg_o <= `WriteDisable;
 								aluop_o <= `EXE_MTLO_OP;
 								reg1_read_o <= 1'b1;
 								reg2_read_o <= 1'b0;
 								instvalid <= `InstValid;
 							end 
-							`EXE_MOVN: begin
+							`EXE_MOVN: begin //movn
 								aluop_o <= `EXE_MOVN_OP;
 								alusel_o <= `EXE_RES_MOVE;
 								reg1_read_o <= 1'b1;
@@ -204,7 +204,7 @@ always@(*)begin
 									wreg_o <= `WriteDisable;
 								end
 							end 
-							`EXE_MOVZ: begin
+							`EXE_MOVZ: begin //movz
 								aluop_o <= `EXE_MOVZ_OP;
 								alusel_o <= `EXE_RES_MOVE;
 								reg1_read_o <= 1'b1;

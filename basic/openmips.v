@@ -97,7 +97,7 @@ pc_reg pc_reg0(
 assign rom_addr_o = pc; //指令存储器的输入地址就是pc的值
 
 //IF/ID模块实例化
-if_id id_id0(
+if_id if_id0(
 	.clk(clk),
 	.rst(rst),
 	.if_pc(pc),
