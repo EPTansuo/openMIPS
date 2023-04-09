@@ -119,7 +119,7 @@ id id0(
 	//输出到regfile的信息
 	.reg1_read_o(reg1_read),
 	.reg1_addr_o(reg1_addr),
-	.reg2_read_o(reg1_read),
+	.reg2_read_o(reg2_read),
 	.reg2_addr_o(reg2_addr),
 	
 	//输出到ID/EX的信息

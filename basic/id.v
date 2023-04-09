@@ -156,7 +156,7 @@ always@(*)begin
 							`EXE_SYNC: begin //sync
 								wreg_o <= `WriteEnable;
 								aluop_o <= `EXE_NOP_OP;  
-								alusel_o <= `EXE_RES_LOGIC;
+								alusel_o <= `EXE_RES_NOP;
 								reg1_read_o <= 1'b0;
 								reg2_read_o <= 1'b1;
 								instvalid = `InstValid;
@@ -254,9 +254,10 @@ always@(*)begin
 				wd_o <= inst_i[20:16];		
 				instvalid <= `InstValid;	
 			end 
-			`EXE_LUI: begin				//lui
+			`EXE_LUI: begin				//lui 将立即数写入到寄存器
+								//可以用OR指令来实现
 				wreg_o <= `WriteEnable;		
-				aluop_o <= `EXE_LUI_OP;		
+				aluop_o <= `EXE_OR_OP;		
 				alusel_o <= `EXE_RES_LOGIC;	
 				reg1_read_o <= 1'b1;		
 				reg2_read_o <= 1'b0;		
@@ -264,7 +265,7 @@ always@(*)begin
 				wd_o <= inst_i[20:16];		
 				instvalid <= `InstValid;	
 			end 
-			`EXE_PREF: begin			//pref 
+			`EXE_PREF: begin			//pref openMIPS未用到
 				wreg_o <= `WriteEnable;		
 				aluop_o <= `EXE_NOP_OP;		
 				alusel_o <= `EXE_RES_NOP;

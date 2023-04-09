@@ -173,7 +173,7 @@ end
 
 
 
-//*************如果是MTHI MTLO指令,则需要给出胡whilo_o,hi_o,lo_i*********
+//*************如果是MTHI MTLO指令,则需要给出whilo_o,hi_o,lo_i*********
 always@(*) begin
 	if(rst == `RstEnable) begin
 		whilo_o <= `WriteDisable;

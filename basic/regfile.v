@@ -46,7 +46,7 @@ always@(*) begin
 	if(rst == `RstEnable) begin
 		rdata1 <= `ZeroWord;
 	end 
-	else if(rdata1 == `RegNumLog2'h0) begin
+	else if(rdata1 == `RegNumLog2'h0) begin    //MIPS32规定$0只能为0
 		rdata1 <= `ZeroWord;
 	end
 	else if((raddr1 == waddr) && (we == `WriteEnable) // 解决相隔两条指令数据相关的问题 
