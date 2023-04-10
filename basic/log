@@ -1,0 +1,54 @@
+ex.v:256: syntax error
+ex.v:257: Syntax in assignment statement l-value.
+ex.v:276: syntax error
+ex.v:277: Syntax in assignment statement l-value.
+ex.v:279: syntax error
+ex.v:282: error: invalid module item.
+ex.v:283: syntax error
+ex.v:285: error: invalid module item.
+ex.v:286: syntax error
+ex.v:289: error: invalid module item.
+ex.v:290: syntax error
+ex.v:297: error: invalid module item.
+ex.v:303: syntax error
+ex.v:303: error: Invalid module instantiation
+ex.v:306: syntax error
+ex.v:306: error: Invalid module instantiation
+ex.v:310: syntax error
+ex.v:310: error: Invalid module instantiation
+ex.v:313: syntax error
+ex.v:313: error: Invalid module instantiation
+ex.v:316: syntax error
+ex.v:316: error: Invalid module instantiation
+ex.v:319: error: invalid module item.
+ex.v:320: syntax error
+ex.v:322: error: invalid module item.
+ex.v:323: syntax error
+ex.v:325: error: invalid module item.
+ex.v:326: syntax error
+ex.v:336: error: invalid module item.
+ex.v:337: syntax error
+ex.v:337: error: Invalid module instantiation
+ex.v:338: error: Invalid module instantiation
+ex.v:342: error: invalid module item.
+ex.v:343: syntax error
+ex.v:343: error: Invalid module instantiation
+ex.v:344: error: Invalid module instantiation
+ex.v:347: error: invalid module item.
+ex.v:348: syntax error
+ex.v:348: error: Invalid module instantiation
+ex.v:349: error: Invalid module instantiation
+ex.v:353: error: invalid module item.
+ex.v:354: syntax error
+ex.v:354: error: Invalid module instantiation
+ex.v:355: error: Invalid module instantiation
+ex.v:357: error: invalid module item.
+ex.v:358: syntax error
+ex.v:358: error: Invalid module instantiation
+ex.v:359: error: Invalid module instantiation
+hilo_reg.v:24: error: invalid module item.
+ex.v:12: assert: pform.cc:1465: failed assertion lexical_scope == cur_module
+iverlog finised!
+WARNING: inst_rom.v:20: $readmemh(inst_rom.data): Not enough words in the file for the requested range [0:131070].
+LXT2 info: dumpfile sim.vcd opened for output.
+vvp finfished!

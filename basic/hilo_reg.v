@@ -1,6 +1,7 @@
 
 //创建时间：2023年 04月 08日 星期
 //最后修改时间: 2023年 04月 08日 星期六
+//最后修改时间: 2023年 04月 10日 星期一
 //作用:HI寄存器保存乘法高32位和除法的余数
 //     LO寄存器保存乘法低32为和除法的商
 
@@ -26,7 +27,7 @@ module hilo_reg(
 		if(rst == `RstEnable) begin
 			hi_o <= `ZeroWord;
 			lo_o <= `ZeroWord;
-		end 
+		end
 		else if (we == `WriteEnable) begin
 			hi_o <= hi_i;
 			lo_o <= lo_i;

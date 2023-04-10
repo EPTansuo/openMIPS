@@ -217,8 +217,70 @@ always@(*)begin
 								else begin
 									wreg_o <= `WriteDisable;
 								end
+							end       
+							`EXE_SLT: begin //slt
+								wreg_o <= `WriteEnable;
+								aluop_o <= `EXE_SLT_OP;
+								alusel_o <= `EXE_RES_ARITHMETIC;
+								reg1_read_o = 1'b1;
+								reg2_read_o = 1'b1;
+								instvalid = `InstValid;
 							end
-
+							`EXE_SLTU: begin //sltu
+								wreg_o <= `WriteEnable;
+								aluop_o <= `EXE_SLTU_OP;
+								alusel_o <= `EXE_RES_ARITHMETIC;
+								reg1_read_o = 1'b1;
+								reg2_read_o = 1'b1;
+								instvalid = `InstValid;
+							end
+							`EXE_ADD: begin //add
+								wreg_o <= `WriteEnable;
+								aluop_o <= `EXE_ADD_OP;
+								alusel_o <= `EXE_RES_ARITHMETIC;
+								reg1_read_o = 1'b1;
+								reg2_read_o = 1'b1;
+								instvalid = `InstValid;
+							end
+							`EXE_ADDU: begin //addu
+								wreg_o <= `WriteEnable;
+								aluop_o <= `EXE_ADDU_OP;
+								alusel_o <= `EXE_RES_ARITHMETIC;
+								reg1_read_o = 1'b1;
+								reg2_read_o = 1'b1;
+								instvalid = `InstValid;
+							end
+							`EXE_SUB: begin //sub
+								wreg_o <= `WriteEnable;
+								aluop_o <= `EXE_SUB_OP;
+								alusel_o <= `EXE_RES_ARITHMETIC;
+								reg1_read_o = 1'b1;
+								reg2_read_o = 1'b1;
+								instvalid = `InstValid;
+							end
+							`EXE_SUBU: begin //subu
+								wreg_o <= `WriteEnable;
+								aluop_o <= `EXE_SUBU_OP;
+								alusel_o <= `EXE_RES_ARITHMETIC;
+								reg1_read_o = 1'b1;
+								reg2_read_o = 1'b1;
+								instvalid = `InstValid;
+							end
+							`EXE_MULT: begin //mult
+								wreg_o <= `WriteEnable;
+								aluop_o <= `EXE_MULT_OP;
+								reg1_read_o = 1'b1;
+								reg2_read_o = 1'b1;
+								instvalid = `InstValid;
+							end
+							`EXE_MULTU: begin //multu
+								wreg_o <= `WriteEnable;
+								aluop_o <= `EXE_MULTU_OP;
+								reg1_read_o = 1'b1;
+								reg2_read_o = 1'b1;
+								instvalid = `InstValid;
+							end
+	
 							default: begin
 							end
 						endcase //case op3
@@ -273,7 +335,79 @@ always@(*)begin
 				reg1_read_o <= 1'b0;		
 				reg2_read_o <= 1'b0;		
 				instvalid <= `InstValid;	
+			end 
+			`EXE_SLTI: begin //stli
+				wreg_o <= `WriteEnable;		
+				aluop_o <= `EXE_SLT_OP;		
+				alusel_o <= `EXE_RES_ARITHMETIC;
+				reg1_read_o <= 1'b1;		
+				reg2_read_o <= 1'b0;	
+				imm <= {{16{inst_i[15]}},inst_i[15:0]};
+				wd_o <= inst_i[20:16];
+				instvalid <= `InstValid;	
+			end 
+			`EXE_SLTIU: begin //stliu
+				wreg_o <= `WriteEnable;		
+				aluop_o <= `EXE_SLTU_OP;		
+				alusel_o <= `EXE_RES_ARITHMETIC;
+				reg1_read_o <= 1'b1;		
+				reg2_read_o <= 1'b0;	
+				imm <= {{16{inst_i[15]}},inst_i[15:0]};
+				wd_o <= inst_i[20:16];
+				instvalid <= `InstValid;	
+			end 
+			`EXE_ADDI: begin //addi
+				wreg_o <= `WriteEnable;		
+				aluop_o <= `EXE_ADDI_OP;		
+				alusel_o <= `EXE_RES_ARITHMETIC;
+				reg1_read_o <= 1'b1;		
+				reg2_read_o <= 1'b0;	
+				imm <= {{16{inst_i[15]}},inst_i[15:0]};
+				wd_o <= inst_i[20:16];
+				instvalid <= `InstValid;	
+			end 
+			`EXE_ADDIU: begin //stli
+				wreg_o <= `WriteEnable;		
+				aluop_o <= `EXE_ADDIU_OP;		
+				alusel_o <= `EXE_RES_ARITHMETIC;
+				reg1_read_o <= 1'b1;		
+				reg2_read_o <= 1'b0;	
+				imm <= {{16{inst_i[15]}},inst_i[15:0]};
+				wd_o <= inst_i[20:16];
+				instvalid <= `InstValid;	
 			end
+			`EXE_SPECIAL2_INST: begin
+				case(op3)
+					`EXE_CLZ: begin //clz
+						wreg_o <= `WriteEnable;
+						aluop_o <= `EXE_CLZ_OP;
+						alusel_o <= `EXE_RES_ARITHMETIC;
+						reg1_read_o <= 1'b1;
+						reg2_read_o <= 1'b0;
+						instvalid <= `InstValid;
+					end
+					`EXE_CLO: begin //clo
+						wreg_o <= `WriteEnable;
+						aluop_o <= `EXE_CLO_OP;
+						alusel_o <= `EXE_RES_ARITHMETIC;
+						reg1_read_o <= 1'b1;
+						reg2_read_o <= 1'b0;
+						instvalid <= `InstValid;
+					end
+					`EXE_MUL: begin //mul
+						wreg_o <= `WriteEnable;
+						aluop_o <= `EXE_MUL_OP;
+						alusel_o <= `EXE_RES_MUL;
+						reg1_read_o <= 1'b1;
+						reg2_read_o <= 1'b1;
+						instvalid <= `InstValid;
+					end
+					default: begin
+					end
+
+				endcase //case op3
+			end //EXE_SPECIAL2_INST case
+
 
 			default: begin
 			end
