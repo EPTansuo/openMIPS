@@ -32,7 +32,36 @@
 
 增加了逻辑操作, 移位操作和空指令
 
+指令格式:
+
+![Screenshot_20230410_141222](README.assets/Screenshot_20230410_141222.png)
+
+![Screenshot_20230410_140727](README.assets/Screenshot_20230410_140727.png)
+
 ## 阶段四. 实现移动操作指令[已完成]
 
 `movn`,`movz`,`mfhi`,`mthi`,`mflo`,`mtlo`
 
+指令格式:
+
+![Screenshot_20230410_140802](README.assets/Screenshot_20230410_140802.png)
+
+## 阶段五. 实现算术操作指令
+
+`add`,`addi`,`addiu`,`addu`,`sub`,`subu`,`clo`,`clz`,`slt`,`slti`,`sltiu`,`sltu`,`mul`,`mult`,`multu`.
+
+add、addu、sub、subu、slt、sltu 指令格式:
+
+![image-20230410141058566](README.assets/image-20230410141058566.png)
+
+addi、addiu、slti、sltiu 指令格式:
+
+![image-20230410141118207](README.assets/image-20230410141118207.png)
+
+clo、clz 指令格式:
+
+![image-20230410141151549](README.assets/image-20230410141151549.png)
+
+multu、mult、mul 指令格式:
+
+![image-20230410141304577](README.assets/image-20230410141304577.png)
