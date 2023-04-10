@@ -4,6 +4,7 @@
 //作用: 依据数据进行运算
 //
 
+`timescale 1ns/1ps
 
 `include "defines.v"
 

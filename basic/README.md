@@ -15,3 +15,7 @@
 
 
 ![image-20230408161254304](README.assets/image-20230408161254304.png)
+
+移动操作指令格式:
+
+<img src="README.assets/Screenshot_20230410_112925.png" alt="Screenshot_20230410_112925" style="zoom:80%;" />

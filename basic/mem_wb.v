@@ -4,6 +4,7 @@
 //作用: 将访存阶段的运算结果, 在下一个时钟传递到回写阶段
 //
 
+`timescale 1ns/1ps
 
 `include "defines.v"
 

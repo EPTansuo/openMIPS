@@ -4,6 +4,8 @@
 //作用: 将执行阶段去得的运算结果, 在下一个时钟周期传递到访存阶段
 //
 
+`timescale 1ns/1ps
+
 `include "defines.v"
 
 module ex_mem(

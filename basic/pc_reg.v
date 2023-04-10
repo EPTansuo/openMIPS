@@ -1,6 +1,7 @@
 //创建时间: 2023年 02月 01日 星期三 
 //作用: 给出指令的地址
 
+`timescale 1ns/1ps
 
 `include "defines.v"
 

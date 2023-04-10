@@ -1,0 +1,111 @@
+vsim work.openmips_min_sopc_tb
+# vsim work.openmips_min_sopc_tb 
+# Start time: 13:36:53 on Apr 10,2023
+# Loading work.openmips_min_sopc_tb
+# Loading work.openmips_min_sopc
+# Loading work.openmips
+# Loading work.pc_reg
+# Loading work.if_id
+# Loading work.id
+# Loading work.regfile
+# Loading work.id_ex
+# Loading work.ex
+# Loading work.ex_mem
+# Loading work.mem
+# Loading work.mem_wb
+# Loading work.hilo_reg
+# Loading work.inst_rom
+add wave -position insertpoint  \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/clk \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/rst \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/we \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/hi_i \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/lo_i \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/hi_o \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/lo_o
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "inst_rom.data" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/inst_rom.v(20)
+#    Time: 0 ps  Iteration: 0  Instance: /openmips_min_sopc_tb/openmips_min_sopc0/inst_rom_0
+# ** Note: $stop    : /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips_min_sopc_tb.v(28)
+#    Time: 1195 ns  Iteration: 0  Instance: /openmips_min_sopc_tb
+# Break in Module openmips_min_sopc_tb at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips_min_sopc_tb.v line 28
+vsim work.openmips_min_sopc_tb
+# End time: 13:39:30 on Apr 10,2023, Elapsed time: 0:02:37
+# Errors: 0, Warnings: 2
+# vsim work.openmips_min_sopc_tb 
+# Start time: 13:39:30 on Apr 10,2023
+# Loading work.openmips_min_sopc_tb
+# Loading work.openmips_min_sopc
+# Loading work.openmips
+# Loading work.pc_reg
+# Loading work.if_id
+# Loading work.id
+# Loading work.regfile
+# Loading work.id_ex
+# Loading work.ex
+# Loading work.ex_mem
+# Loading work.mem
+# Loading work.mem_wb
+# Loading work.hilo_reg
+# Loading work.inst_rom
+# Compile of defines.v was successful.
+# Compile of ex.v was successful.
+# Compile of ex_mem.v was successful.
+# Compile of hilo_reg.v was successful.
+# Compile of id.v was successful.
+# Compile of id_ex.v was successful.
+# Compile of if_id.v was successful.
+# Compile of inst_rom.v was successful.
+# Compile of mem.v was successful.
+# Compile of mem_wb.v was successful.
+# Compile of openmips.v was successful.
+# Compile of openmips_min_sopc.v was successful.
+# Compile of openmips_min_sopc_tb.v was successful.
+# Compile of pc_reg.v was successful.
+# Compile of regfile.v was successful.
+# 15 compiles, 0 failed with no errors.
+vsim work.openmips_min_sopc_tb
+# End time: 13:41:09 on Apr 10,2023, Elapsed time: 0:01:39
+# Errors: 0, Warnings: 2
+# vsim work.openmips_min_sopc_tb 
+# Start time: 13:41:09 on Apr 10,2023
+# Loading work.openmips_min_sopc_tb
+# Loading work.openmips_min_sopc
+# Loading work.openmips
+# Loading work.pc_reg
+# Loading work.if_id
+# Loading work.id
+# Loading work.regfile
+# Loading work.id_ex
+# Loading work.ex
+# Loading work.ex_mem
+# Loading work.mem
+# Loading work.mem_wb
+# Loading work.hilo_reg
+# Loading work.inst_rom
+add wave  \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/clk \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/rst \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/we \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/hi_i \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/lo_i \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/hi_o \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/hilo_reg0/lo_o
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "inst_rom.data" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/inst_rom.v(20)
+#    Time: 0 ps  Iteration: 0  Instance: /openmips_min_sopc_tb/openmips_min_sopc0/inst_rom_0
+# ** Note: $stop    : /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips_min_sopc_tb.v(28)
+#    Time: 1195 ns  Iteration: 0  Instance: /openmips_min_sopc_tb
+# Break in Module openmips_min_sopc_tb at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips_min_sopc_tb.v line 28
+add wave -position insertpoint  \
+sim:/openmips_min_sopc_tb/openmips_min_sopc0/inst_rom_0/inst
+run -all
+# Break key hit
+# Break key hit
+run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 13:42:19 on Apr 10,2023, Elapsed time: 0:01:10
+# Errors: 0, Warnings: 3

@@ -4,6 +4,8 @@
 //作用:HI寄存器保存乘法高32位和除法的余数
 //     LO寄存器保存乘法低32为和除法的商
 
+`timescale 1ns/1ps
+
 `include "defines.v"
 
 module hilo_reg(

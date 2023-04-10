@@ -4,6 +4,8 @@
 //作用: 将执行阶段的数据传递到访存阶段
 //
 
+`timescale 1ns/1ps
+
 `include "defines.v"
 
 module mem(

@@ -3,6 +3,7 @@
 //作用: 从指令存储器读取指令, 指令进入OpenMips进行执行
 //
 
+`timescale 1ns/1ps
 
 `include "defines.v"
 

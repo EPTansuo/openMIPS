@@ -3,6 +3,7 @@
 // 作用:实现openmips顶层模块, 建立各模块间的连接
 //
 
+`timescale 1ns/1ps
 
 `include "defines.v"
 
@@ -86,6 +87,8 @@ wire[`RegAddrBus]	reg1_addr;
 wire[`RegAddrBus]	reg2_addr;
 
 
+
+
 //pc_reg实例化
 pc_reg pc_reg0(
 	.clk(clk),
@@ -97,7 +100,7 @@ pc_reg pc_reg0(
 assign rom_addr_o = pc; //指令存储器的输入地址就是pc的值
 
 //IF/ID模块实例化
-if_id id_id0(
+if_id if_id0(
 	.clk(clk),
 	.rst(rst),
 	.if_pc(pc),
@@ -128,7 +131,17 @@ id id0(
 	.reg1_o(id_reg1_o),
 	.reg2_o(id_reg2_o),
 	.wd_o(id_wd_o),
-	.wreg_o(id_wreg_o)
+	.wreg_o(id_wreg_o),
+
+	//从访存阶段传来的数据
+	.mem_wdata_i(mem_wdata_o),
+	.mem_wreg_i(mem_wreg_o),
+	.mem_wd_i(mem_wd_o),
+
+	//从执行阶段传来的数据
+	.ex_wdata_i(ex_wdata_o),
+	.ex_wd_i(ex_wd_o),
+	.ex_wreg_i(ex_wreg_o)
 );
 
 //通用寄存器regfile实例化
@@ -230,7 +243,7 @@ ex_mem ex_mem0(
 	.mem_wreg(mem_wreg_i),
 	.mem_whilo(mem_whilo_i),
 	.mem_hi(mem_hi_i),
-	.mem_lo(mem_hi_i)
+	.mem_lo(mem_lo_i)
 );
 
 
@@ -272,7 +285,12 @@ mem_wb mem_wb0(
 	//送到回写阶段的信息
 	.wb_wd(wb_wd_i),
 	.wb_wreg(wb_wreg_i),
-	.wb_wdata(wb_wdata_i)
+	.wb_wdata(wb_wdata_i),
+	
+	//送到HILO模块的信息
+	.wb_hi(wb_hi),
+	.wb_lo(wb_lo),
+	.wb_whilo(wb_whilo)
 );
 
 // HILO模块实例化

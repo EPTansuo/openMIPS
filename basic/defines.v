@@ -79,7 +79,7 @@
 `define EXE_SRA_OP	8'b00000011
 `define EXE_SRAV_OP	8'b00000111
 
-//转移指令
+//移动指令
 `define EXE_MOVZ_OP	8'b00001010
 `define EXE_MOVN_OP	8'b00001011
 `define EXE_MFHI_OP	8'b00010000

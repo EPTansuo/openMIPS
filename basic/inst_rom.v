@@ -2,6 +2,7 @@
 //创建时间: 2023年 02月 02日 星期四
 //作用: 实现指令的存储与读出
 
+`timescale 1ns/1ps
 
 `include "defines.v"
 

@@ -3,6 +3,7 @@
 //作用: 将译码阶段取得的数据, 在下一个时钟周期传递到执行阶段
 //
 
+`timescale 1ns/1ps
 
 `include "defines.v"
 

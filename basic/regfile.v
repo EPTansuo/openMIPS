@@ -4,7 +4,7 @@
 //作用:实现了32个32为通用寄存器,可以同时进行两个寄存器的读操作和一个寄存器
 //的写操作
 
-
+`timescale 1ns/1ps
 
 `include "defines.v"
 
@@ -46,7 +46,7 @@ always@(*) begin
 	if(rst == `RstEnable) begin
 		rdata1 <= `ZeroWord;
 	end 
-	else if(rdata1 == `RegNumLog2'h0) begin    //MIPS32规定$0只能为0
+	else if(raddr1 == `RegNumLog2'h0) begin    //MIPS32规定$0只能为0
 		rdata1 <= `ZeroWord;
 	end
 	else if((raddr1 == waddr) && (we == `WriteEnable) // 解决相隔两条指令数据相关的问题 
@@ -64,7 +64,7 @@ always@(*) begin
 	if(rst == `RstEnable) begin
 		rdata2 <= `ZeroWord;
 	end 
-	else if(rdata2 == `RegNumLog2'h0) begin
+	else if(raddr2 == `RegNumLog2'h0) begin   //MIPS32规定$0只能为0
 		rdata2 <= `ZeroWord;
 	end
 	else if((raddr2 == waddr) && (we == `WriteEnable) // 解决相隔两条指令数据相关的问题 
