@@ -316,7 +316,7 @@ always@(*) begin
 		`EXE_RES_MOVE: begin
 			wdata_o <= moveres;
 		end
-		`EXE_RES_ARITHMETIC: begin
+		`EXE_RES_ARITHMETIC : begin
 			wdata_o <= arithmeticres;
 		end
 		`EXE_RES_MUL: begin

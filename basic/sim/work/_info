@@ -10,23 +10,23 @@ z2
 cModel Technology
 d/home/han
 vex
-Z0 !s110 1681117975
+Z0 !s110 1681118328
 !i10b 1
-!s100 bUQZnHz_Q>Ic7P:Z?U==23
+!s100 8]1>a>0l=_eFAmJBO6?S;2
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I^ER:>8>f=K7nkU;Xo?z=?3
+I81J7ZePc3gReiOWU5Ah`^2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 d/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/sim
-w1681117968
+w1681118281
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/ex.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/ex.v
-!i122 115
+!i122 171
 L0 12 354
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1681117975.000000
+Z5 !s108 1681118328.000000
 !s107 /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/defines.v|/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/ex.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/ex.v|
 !i113 1
@@ -43,7 +43,7 @@ R3
 Z8 w1681106412
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/ex_mem.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/ex_mem.v
-!i122 116
+!i122 172
 L0 11 43
 R4
 r1
@@ -63,10 +63,10 @@ R1
 IKFH4TXoQ4Hik5he@O[Rd_3
 R2
 R3
-w1681117740
+Z9 w1681118045
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/hilo_reg.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/hilo_reg.v
-!i122 117
+!i122 173
 L0 12 26
 R4
 r1
@@ -81,15 +81,15 @@ R7
 vid
 R0
 !i10b 1
-!s100 01:Rh`_7mf5_SJQm`GLnD2
+!s100 _E=0H=<L7;CMe_lhh[kfX0
 R1
-IZ;oEX7j]MnC>;4Y]1GK6U2
+IC3j9gXOUzkS9nZg7HnNjn3
 R2
 R3
-w1681117894
+R9
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v
-!i122 118
+!i122 174
 L0 11 501
 R4
 r1
@@ -112,7 +112,7 @@ R3
 R8
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id_ex.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id_ex.v
-!i122 119
+!i122 175
 L0 10 42
 R4
 r1
@@ -135,7 +135,7 @@ R3
 R8
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/if_id.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/if_id.v
-!i122 120
+!i122 176
 L0 10 23
 R4
 r1
@@ -158,7 +158,7 @@ R3
 R8
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/inst_rom.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/inst_rom.v
-!i122 121
+!i122 177
 L0 10 26
 R4
 r1
@@ -181,7 +181,7 @@ R3
 R8
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/mem.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/mem.v
-!i122 122
+!i122 178
 L0 11 40
 R4
 r1
@@ -204,7 +204,7 @@ R3
 R8
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/mem_wb.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/mem_wb.v
-!i122 123
+!i122 179
 L0 12 43
 R4
 r1
@@ -227,7 +227,7 @@ R3
 R8
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips.v
-!i122 124
+!i122 180
 L0 10 304
 R4
 r1
@@ -250,7 +250,7 @@ R3
 R8
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips_min_sopc.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips_min_sopc.v
-!i122 125
+!i122 181
 L0 10 28
 R4
 r1
@@ -273,7 +273,7 @@ R3
 w1681105419
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips_min_sopc_tb.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/openmips_min_sopc_tb.v
-!i122 126
+!i122 182
 L0 12 42
 R4
 r1
@@ -296,7 +296,7 @@ R3
 R8
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/pc_reg.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/pc_reg.v
-!i122 127
+!i122 183
 L0 8 28
 R4
 r1
@@ -309,7 +309,7 @@ R5
 R6
 R7
 vregfile
-!s110 1681117976
+R0
 !i10b 1
 !s100 lYXk6]lnA9LZJ:nEOnD3;3
 R1
@@ -319,13 +319,13 @@ R3
 R8
 8/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/regfile.v
 F/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/regfile.v
-!i122 128
+!i122 184
 L0 11 71
 R4
 r1
 !s85 0
 31
-!s108 1681117976.000000
+R5
 !s107 /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/defines.v|/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/regfile.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/regfile.v|
 !i113 1

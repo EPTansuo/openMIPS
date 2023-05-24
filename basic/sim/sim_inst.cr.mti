@@ -1,12 +1,12 @@
-/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/regfile.v {1 {vlog -work work -stats=none /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/regfile.v
+/home/han/Disk/Document/PROJECT/learn/openMIPS/basic/defines.v {1 {vlog -work work -stats=none /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/defines.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+} {} {}} /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/regfile.v {1 {vlog -work work -stats=none /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/regfile.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module regfile
 
 Top level modules:
 	regfile
-
-} {} {}} /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/defines.v {1 {vlog -work work -stats=none /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/defines.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
 } {} {}} /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/mem.v {1 {vlog -work work -stats=none /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/mem.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -43,33 +43,9 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	openmips
 
-} {} {}} /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v {2 {vlog -work work -stats=none /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v
+} {} {}} /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v {1 {vlog -work work -stats=none /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module id
-** Warning: ** while parsing macro expansion: 'EXE_RES_ARITHMETIC' starting at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(224)
-** at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(224): (vlog-2638) Bad name or identifier in Verilog compiler directive.  The following text was found where a compiler directive name or macro name was expected.: 'b.
-** Warning: ** while parsing macro expansion: 'EXE_RES_ARITHMETIC' starting at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(232)
-** at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(232): (vlog-2638) Bad name or identifier in Verilog compiler directive.  The following text was found where a compiler directive name or macro name was expected.: 'b.
-** Warning: ** while parsing macro expansion: 'EXE_RES_ARITHMETIC' starting at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(240)
-** at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(240): (vlog-2638) Bad name or identifier in Verilog compiler directive.  The following text was found where a compiler directive name or macro name was expected.: 'b.
-** Warning: ** while parsing macro expansion: 'EXE_RES_ARITHMETIC' starting at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(248)
-** at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(248): (vlog-2638) Bad name or identifier in Verilog compiler directive.  The following text was found where a compiler directive name or macro name was expected.: 'b.
-** Warning: ** while parsing macro expansion: 'EXE_RES_ARITHMETIC' starting at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(256)
-** at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(256): (vlog-2638) Bad name or identifier in Verilog compiler directive.  The following text was found where a compiler directive name or macro name was expected.: 'b.
-** Warning: ** while parsing macro expansion: 'EXE_RES_ARITHMETIC' starting at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(264)
-** at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(264): (vlog-2638) Bad name or identifier in Verilog compiler directive.  The following text was found where a compiler directive name or macro name was expected.: 'b.
-** Warning: ** while parsing macro expansion: 'EXE_RES_ARITHMETIC' starting at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(342)
-** at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(342): (vlog-2638) Bad name or identifier in Verilog compiler directive.  The following text was found where a compiler directive name or macro name was expected.: 'b.
-** Warning: ** while parsing macro expansion: 'EXE_RES_ARITHMETIC' starting at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(352)
-** at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(352): (vlog-2638) Bad name or identifier in Verilog compiler directive.  The following text was found where a compiler directive name or macro name was expected.: 'b.
-** Warning: ** while parsing macro expansion: 'EXE_RES_ARITHMETIC' starting at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(362)
-** at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(362): (vlog-2638) Bad name or identifier in Verilog compiler directive.  The following text was found where a compiler directive name or macro name was expected.: 'b.
-** Warning: ** while parsing macro expansion: 'EXE_RES_ARITHMETIC' starting at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(372)
-** at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(372): (vlog-2638) Bad name or identifier in Verilog compiler directive.  The following text was found where a compiler directive name or macro name was expected.: 'b.
-** Warning: ** while parsing macro expansion: 'EXE_RES_ARITHMETIC' starting at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(384)
-** at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(384): (vlog-2638) Bad name or identifier in Verilog compiler directive.  The following text was found where a compiler directive name or macro name was expected.: 'b.
-** Warning: ** while parsing macro expansion: 'EXE_RES_ARITHMETIC' starting at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(392)
-** at /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/id.v(392): (vlog-2638) Bad name or identifier in Verilog compiler directive.  The following text was found where a compiler directive name or macro name was expected.: 'b.
 
 Top level modules:
 	id
@@ -102,18 +78,18 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	openmips_min_sopc
 
-} {} {}} /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/if_id.v {1 {vlog -work work -stats=none /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/if_id.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module if_id
-
-Top level modules:
-	if_id
-
 } {} {}} /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/inst_rom.v {1 {vlog -work work -stats=none /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/inst_rom.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module inst_rom
 
 Top level modules:
 	inst_rom
+
+} {} {}} /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/if_id.v {1 {vlog -work work -stats=none /home/han/Disk/Document/PROJECT/learn/openMIPS/basic/if_id.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module if_id
+
+Top level modules:
+	if_id
 
 } {} {}}

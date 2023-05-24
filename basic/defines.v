@@ -129,7 +129,7 @@
 `define EXE_RES_LOGIC	3'b001
 `define EXE_RES_SHIFT	3'b010
 `define EXE_RES_MOVE	3'b011
-`define EXE_RES_ARITHMETIC `'b100
+`define EXE_RES_ARITHMETIC 3'b100
 `define EXE_RES_MUL	3'b101
 
 //*****************与指令存储器ROM有关的宏定义********
